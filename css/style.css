@@ -23,9 +23,6 @@
     stroke: #999;
     stroke-width: 1px;
 }
-#graph {
-    padding-top: 50px;
-}
 .map {
     border: medium solid #999;
 }
@@ -44,6 +41,7 @@
     font: 16px sans-serif;
     color:aqua;
     text-shadow: 3px;
+    width: auto;
 }
 
 .axis path,
@@ -51,27 +49,38 @@
     fill: none;
     stroke: #000;
     shape-rendering: crispEdges;
+    width: auto;
+}
+#dataContainer{
+    background-color:none;
 }
 #mapContainer{
-  background-color:none;
-  position:relative;
+    background-color:none;
+    position: absolute;
+    width: 46%;
+    height: 600px;
+    left: 20px;
 }
 #ddContainer{
     width: 50%;
     position: absolute;
-    top:30px;
+    top: 50px;
     left:40px;
     display:inline;
 }
 #graphContainer{
     background-color: rgba(128,128,128,.2);
     border: medium solid #999;
-    float: none;
-    position: relative;
-    width: 960px;
+    width: 50%;
+    height: 600px;
+    position: absolute;
+    right: 20px;
+}
+#graph {
+    padding-top: 0px;
 }
 #graphTitle{
-    position: absolute;
+    position: right;
     top: 30px;
     padding-left: 20%;
     display: inline;
@@ -85,7 +94,7 @@
     font: 16px sans-serif;
     font-weight: bold;
     line-height: 1.5em;
-    width: 60%;
+    width: 75%;
 }
 h1 {
     margin: 10px 0 0 20px;

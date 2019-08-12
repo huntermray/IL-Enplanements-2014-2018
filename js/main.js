@@ -49,8 +49,8 @@ window.onload = setMap();setGraph();
         var map = d3.select("#mapContainer")
             .append("svg")
             .attr("class", "map")
-            .attr("width", width)
-            .attr("height", height);
+            .attr("width", "auto")
+            .attr("height", "auto");
 
         //create Albers equal area conic projection centered on Illinois
         var projection = d3.geoAlbers()
