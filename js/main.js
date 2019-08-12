@@ -198,7 +198,9 @@ window.onload = setMap();setGraph();
         //make sure attribute value is a number
         var val = parseFloat(props[expressed]);
         //if attribute value exists, assign a color; otherwise assign gray
-        if (typeof val == 'number' && !isNaN(val)){
+        if (val=='0'){
+            return "#eaeaea";
+        } if (typeof val == 'number' && !isNaN(val)){
             return colorScale(val);
         } else {
             return "#CCC";

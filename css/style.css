@@ -85,7 +85,7 @@
     font: 16px sans-serif;
     font-weight: bold;
     line-height: 1.5em;
-    width: window.innerWidth*0.6;
+    width: 60%;
 }
 h1 {
     margin: 10px 0 0 20px;
